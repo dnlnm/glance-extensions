@@ -1,0 +1,31 @@
+#Prayer Times (Only for Terengganu, Malaysia for now)
+- type: extension
+  title: prayer times
+  Widget-Content-Type: html
+  allow-potentially-dangerous-html: true
+  url: http://127.0.0.1/prayer.php # URL location of your prayer.php script
+  cache: 1s
+  parameters:
+    server: "https://mpt.i906.my/mpt.json?code=trg-4&filter=1"
+    timezone: "Asia/Kuala_Lumpur" # default is '' Must be set to your timezone here
+
+#Immich
+- type: extension
+  title: immich
+  Widget-Content-Type: html
+  allow-potentially-dangerous-html: true
+  url: http://127.0.0.1/immich.php # URL location of your immich.php script
+  cache: 1s
+  parameters:
+    server: "" # default is '' Must be set to your base immich url here eg. http://192.168.0.1:2283
+    token: "" #default is ''. Must set your API key here
+
+#Speedtest-tracker by alexjustesen
+- type: extension
+  title: speedtest
+  Widget-Content-Type: html
+  allow-potentially-dangerous-html: true
+  url: http://127.0.0.1:8057/speedtest.php # URL location of your speedtest.php script
+  cache: 1s
+  parameters:
+    server: "" # default is '' Must be set to your base speedtest url here eg. http://192.168.0.1:3457

@@ -9,7 +9,7 @@ header('Widget-Content-Type: html');
 
 
 // Make API request
-$ch = curl_init($url. $apiEndpoint);
+$ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 curl_close($ch);
