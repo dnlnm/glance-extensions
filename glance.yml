@@ -6,7 +6,8 @@
   url: http://127.0.0.1/prayer.php # URL location of your prayer.php script
   cache: 1s
   parameters:
-    server: "https://mpt.i906.my/mpt.json?code=trg-4&filter=1"
+    server: "https://mpt.i906.my" # API link for Malaysia Prayer Times
+    code: "trg-4" # See https://mpt.i906.my/code.html for available location codes
     timezone: "Asia/Kuala_Lumpur" # default is '' Must be set to your timezone here
 
 #Immich
@@ -17,8 +18,8 @@
   url: http://127.0.0.1/immich.php # URL location of your immich.php script
   cache: 1s
   parameters:
-    server: "" # default is '' Must be set to your base immich url here eg. http://192.168.0.1:2283
-    token: "" #default is ''. Must set your API key here
+    server: "" # default is ''. Must be set to your base immich url here eg. http://192.168.0.1:2283
+    token: "" # default is ''. Must set your API key here
 
 #Speedtest-tracker by alexjustesen
 - type: extension

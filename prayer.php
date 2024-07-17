@@ -1,5 +1,10 @@
 <?php
 $url = $_GET['server'] ?? '';
+$apiEndpoint = '/mpt.json?filter=1';
+$code = $_GET['code']?? '';
+$parameters = array('code' => $code);
+$url  .= $apiEndpoint . '&' . http_build_query($parameters);
+
 $zone = $_GET['timezone'] ?? '';
 date_default_timezone_set($zone);
 
@@ -113,4 +118,3 @@ $fixedIsyak = formatTime($isyak);
             <td class="right-align"><?= htmlspecialchars($fixedIsyak)?></td>
         </tr>
     </table>
-
